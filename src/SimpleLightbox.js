@@ -9,8 +9,17 @@ export default class SimpleLightbox extends Component {
     this.state = {
       imgId: uniqueId()
     };
+    this.escFunction = this.escFunction.bind(this);
   }
-
+  componentDidMount() {
+    document.addEventListener("keydown", this.escFunction, false);
+  }
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.escFunction, false);
+  }
+  escFunction(event) {
+    if (event.keyCode === 27) this.closeImg();
+  }
   openImg() {
     const target = document.getElementById(this.state.imgId);
     target.classList.add("lightbox-visible");
