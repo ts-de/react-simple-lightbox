@@ -1,0 +1,53 @@
+.lightbox-wrapper .lightbox {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-wrapper .img-open {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  cursor: zoom-in;
+}
+.lightbox-wrapper .img-close {
+  cursor: zoom-out;
+}
+
+.lightbox-wrapper .lightbox img {
+  max-width: 95%;
+  max-height: 85%;
+  margin: 5% auto;
+}
+
+.lightbox-wrapper .lightbox:target {
+  outline: none;
+  display: block;
+}
+
+.lightbox-wrapper .lightbox-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 200ms linear;
+  -webkit-transition: opacity 200ms linear;
+  -moz-transition: opacity 200ms linear;
+  -ms-transition: opacity 200ms linear;
+  -o-transition: opacity 200ms linear;
+}
+
+.lightbox-wrapper .lightbox-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 200ms, opacity 200ms linear;
+  -webkit-transition: visibility 0s 200ms, opacity 200ms linear;
+  -moz-transition: visibility 0s 200ms, opacity 200ms linear;
+  -ms-transition: visibility 0s 200ms, opacity 200ms linear;
+  -o-transition: visibility 0s 200ms, opacity 200ms linear;
+}
+
