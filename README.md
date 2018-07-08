@@ -31,6 +31,6 @@ import Lightbox from "react-simple-lightbox";
 - pass custom styles to `Lightbox`
 
 ### TODO
-[] pass custom classes
-[] ass Jest && write Tests
-[] integrate Singel
+- [ ] pass custom classes
+- [ ] ass Jest && write Tests
+- [ ] integrate Singel
