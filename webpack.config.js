@@ -1,10 +1,10 @@
-var path = require("path");
+const path = require("path");
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "index.js",
-    libraryTarget: "commonjs2" // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
+    libraryTarget: "commonjs2"
   },
   module: {
     rules: [
