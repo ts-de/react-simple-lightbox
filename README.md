@@ -1,4 +1,4 @@
-#react-image-lightbox
+# react-image-lightbox
 ![npm](https://img.shields.io/npm/dt/react-simple-lightbox.svg)
 
 **react-image-lightbox** is a simple react component that renders a container with a thumbnail image that can be expanded in a lightbox.
