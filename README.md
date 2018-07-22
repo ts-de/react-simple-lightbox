@@ -38,3 +38,7 @@ import Lightbox from "react-simple-lightbox";
 - [ ] add jest and write tests
 - [ ] integrate [singel](https://github.com/diegohaz/singel)
 - [ ] use [styled-components](https://github.com/styled-components/styled-components)
+
+
+## License
+MIT © [Tristan Schlötel](https://github.com/ts-de)
